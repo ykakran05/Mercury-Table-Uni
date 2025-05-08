@@ -43,3 +43,63 @@
   padding: 0 0.5rem; 
   box-sizing: border-box; 
 }
+
+.header-column-amount {
+  text-align: right;
+  padding-right: 0.5rem; 
+}
+
+.transaction-row {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+  background-color: #fff;
+}
+
+.transaction-row:hover {
+  background-color: #f3f4f6;
+}
+
+.date-column {
+  width: 16.666667%;
+  font-size: 0.875rem;
+  padding-left: 0.5rem; 
+}
+
+.data-columns {
+  width: 83.333333%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d1d5db;
+  box-sizing: border-box;
+}
+
+.column {
+  width: 25%;
+  font-size: 0.875rem;
+  padding: 0 0.5rem; 
+  box-sizing: border-box;
+}
+
+.column-amount {
+  text-align: right;
+  padding-right: 0.5rem;
+}
+
+
+@media (max-width: 768px) {
+  .transaction-table-container {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .header-date-column,
+  .date-column {
+    font-size: 0.75rem;
+  }
+
+  .header-column,
+  .column {
+    font-size: 0.75rem;
+  }
+}

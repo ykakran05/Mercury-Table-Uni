@@ -1,5 +1,7 @@
+import TransactionRow from "./TransactionRow";
 
 const TransactionTable = ({ transactions }) => {
+  let currentDate = null;
 
   return (
     <div className="transaction-table-container">
@@ -15,6 +17,19 @@ const TransactionTable = ({ transactions }) => {
             <div className="header-column">Payment Method</div>
           </div>
         </div>
+        
+        {transactions.map((transaction, index) => {
+          const isFirstInGroup = transaction.date !== currentDate;
+          currentDate = transaction.date;
+          return (
+            <TransactionRow
+              key={index}
+              transaction={transaction}
+              isFirstInGroup={isFirstInGroup}
+              showDate={true}
+            />
+          );
+        })}
       </div>
     </div>
   );
