@@ -24,7 +24,6 @@ To run locally:
 
 - React.js (functional components, hooks)
 - CSS (custom styling with responsiveness)
-- Custom Hook (`useFetch`) for simulated data fetching
 
 ## How It Works
 
