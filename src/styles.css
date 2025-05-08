@@ -1,0 +1,45 @@
+.transaction-table-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.transaction-table-header {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.transaction-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+  background-color: #f9fafb;
+  font-weight: 600;
+  border-bottom: 2px solid #d1d5db;
+}
+
+.header-date-column {
+  width: 16.666667%;
+  font-size: 0.875rem;
+  padding-left: 0.5rem; 
+}
+
+.header-data-columns {
+  width: 83.333333%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box; 
+}
+
+.header-column {
+  width: 25%;
+  font-size: 0.875rem;
+  padding: 0 0.5rem; 
+  box-sizing: border-box; 
+}
